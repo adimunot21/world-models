@@ -1,0 +1,28 @@
+# === Controller + CMA-ES Configuration ===
+# Linear controller trained with evolutionary optimization.
+
+model:
+  latent_dim: 32
+  hidden_dim: 256
+  action_dim: 3
+
+cma_es:
+  population_size: 64
+  sigma_init: 0.1
+  max_generations: 300
+  target_reward: 800
+  num_rollouts: 3
+  num_workers: 6
+
+dream_training:
+  enabled: false
+  temperature: 1.0
+  max_dream_steps: 300
+
+evaluation:
+  num_episodes: 100
+  render: false
+  save_video: true
+
+checkpoint:
+  save_dir: "checkpoints/controller"

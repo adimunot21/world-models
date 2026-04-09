@@ -1,0 +1,21 @@
+# === MDN-RNN Configuration ===
+# Mixture Density Network + LSTM for predicting future latent states.
+
+model:
+  latent_dim: 32
+  action_dim: 3
+  hidden_dim: 256
+  num_gaussians: 5
+  num_layers: 1
+
+training:
+  batch_size: 64
+  sequence_length: 32
+  learning_rate: 1.0e-3
+  epochs: 50
+  grad_clip: 1.0
+  num_workers: 4
+
+checkpoint:
+  save_dir: "checkpoints/mdn_rnn"
+  save_every: 10

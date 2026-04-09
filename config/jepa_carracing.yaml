@@ -1,0 +1,31 @@
+# === JEPA on CarRacing Configuration ===
+# Joint-Embedding Predictive Architecture adapted for CarRacing.
+# Inspired by LeWorldModel's SIGReg approach.
+# Key difference from VAE: NO decoder, NO pixel reconstruction.
+
+model:
+  embedding_dim: 192
+  img_channels: 3
+  img_size: 64
+  action_dim: 3
+
+  encoder:
+    type: "cnn"
+    num_layers: 4
+
+  predictor:
+    type: "mlp"
+    hidden_dim: 256
+    num_layers: 2
+
+training:
+  batch_size: 128
+  sequence_length: 16
+  learning_rate: 1.0e-3
+  epochs: 50
+  sigreg_weight: 1.0
+  num_workers: 4
+
+checkpoint:
+  save_dir: "checkpoints/jepa"
+  save_every: 10

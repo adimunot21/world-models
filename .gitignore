@@ -1,0 +1,62 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# === Virtual environments ===
+.venv/
+venv/
+env/
+lewm/.venv/
+
+# === IDE ===
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === Data (downloaded, too large to track) ===
+data/
+*.h5
+*.hdf5
+
+# === Model checkpoints (large files) ===
+checkpoints/**/*.pt
+checkpoints/**/*.pth
+checkpoints/**/*.ckpt
+checkpoints/**/*.tar
+
+# === Results (generated outputs) ===
+results/
+
+# === Secrets ===
+.env
+
+# === Logs ===
+*.log
+runs/
+lightning_logs/
+
+# === LeWorldModel data/checkpoints ===
+lewm/.venv/
+~/.stable-wm/
+
+# === Misc ===
+*.pkl
+*.npy
+*.npz
+wandb/

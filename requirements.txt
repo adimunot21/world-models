@@ -1,0 +1,41 @@
+# === World Models: From Dreams to JEPA ===
+# Install PyTorch FIRST with CUDA 13.0:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+# Then install numpy<2:
+#   pip install "numpy<2"
+# Then install the rest:
+#   pip install -r requirements.txt
+
+# --- RL Environment ---
+gymnasium[box2d]
+
+# --- Optimization ---
+cma
+
+# --- Visualization ---
+matplotlib
+seaborn
+tensorboard
+
+# --- ML Utilities ---
+scikit-learn
+umap-learn
+
+# --- Data ---
+h5py
+
+# --- Image/Video ---
+imageio
+imageio-ffmpeg
+Pillow
+
+# --- Config & Utils ---
+PyYAML
+python-dotenv
+tqdm
+
+# --- Testing ---
+pytest
+
+# --- Notebooks ---
+ipykernel

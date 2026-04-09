@@ -1,0 +1,19 @@
+# === VAE Configuration ===
+# Convolutional Variational Autoencoder for CarRacing frame compression.
+
+model:
+  latent_dim: 32
+  img_channels: 3
+  img_size: 64
+
+training:
+  batch_size: 128
+  learning_rate: 1.0e-3
+  epochs: 30
+  kl_weight: 1.0
+  kl_warmup_epochs: 5
+  num_workers: 4
+
+checkpoint:
+  save_dir: "checkpoints/vae"
+  save_every: 5

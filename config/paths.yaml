@@ -1,0 +1,22 @@
+# === Path Configuration ===
+# Central location for all data and output paths.
+
+data:
+  carracing_dir: "data/carracing"
+  lewm_dir: "data/lewm"
+
+checkpoints:
+  vae: "checkpoints/vae"
+  mdn_rnn: "checkpoints/mdn_rnn"
+  controller: "checkpoints/controller"
+  jepa: "checkpoints/jepa"
+
+results:
+  plots: "results/plots"
+  videos: "results/videos"
+  metrics: "results/metrics"
+
+tensorboard:
+  log_dir: "runs"
+
+seed: 42
